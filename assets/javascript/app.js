@@ -105,7 +105,7 @@ var imgClass = quotes[counter].images[qCount];
 startScreen();
 
 // generates start screen
-function startScreen (){
+function startScreen () {
     btnCounter = 1;
     totalUnanswered = 0;
     totalRight = 0;
@@ -141,11 +141,11 @@ var selected;
 // click event for starting game
 $("#tvDisplay").on("click", ".btn-success", function() {
     getQuote();
-})
+});
 
 // click event for starting next round
 $("#tvDisplay").on("click", ".btn-primary", function() {
-    if(qCount === 3 ){
+    if(qCount === 3 ) {
         qCount = 0;
     }
     quotes.sort(function() {
@@ -154,7 +154,7 @@ $("#tvDisplay").on("click", ".btn-primary", function() {
     resetTv();
     resetGame();
     getQuote();
-})
+});
 
 // click event guessing the quote
 $("#choicesDisplay").on("click", ".btn-Light", function() {
@@ -175,14 +175,14 @@ $("#choicesDisplay").on("click", ".btn-Light", function() {
 // Good game/end restart
 function gg() {
     resetTv();
-    gameHtml = "<br><br><br><br>Good Game!" ;
+    gameHtml = "<br><br><br><br>Good Game!";
     $("#tvText").addClass("instructions");
     $(".instructions").html(gameHtml);
 }
 
 // adds up/displays total cumulative score
 function totalScore() {
-    gameHtml = " Your Total Score:<br><br> Correct: " + totalRight + "<br><br> Incorrect: " + totalWrong + "<br><br> Unanswered: " + totalUnanswered ;
+    gameHtml = " Your Total Score:<br><br> Correct: " + totalRight + "<br><br> Incorrect: " + totalWrong + "<br><br> Unanswered: " + totalUnanswered;
     $("#tvDisplay").removeClass("blankTv").addClass("endTv");
     $("#tvText").addClass("endScore");
     $(".endScore").html(gameHtml);
@@ -196,7 +196,7 @@ function endGame() {
     finalRound = false;
     $("#choicesDisplay").empty();
     resetTv();
-    gameHtml = "Final Round Score:<br><br> Correct: " + rightA + "<br><br> Incorrect: " + wrongA + "<br><br> Unanswered: " + unanswered ;
+    gameHtml = "Final Round Score:<br><br> Correct: " + rightA + "<br><br> Incorrect: " + wrongA + "<br><br> Unanswered: " + unanswered;
     $("#tvDisplay").removeClass("blankTv").addClass("endTv");
     $("#tvText").addClass("endScore");
     $(".endScore").html(gameHtml);
@@ -216,12 +216,13 @@ function endScreen(){
     btnCounter++;
     qCount++;
     resetTv();
+
     if (btnCounter === 3){
         finalRound = true;
         btnCounter = 1;
         gameHtml = "Round 2 Score:<br><br> Correct: " + rightA + "<br><br> Incorrect: " + wrongA + "<br><br> Unanswered: " + unanswered + "<br><br><br><br><br><br><br><br><button type='button' class='btn btn-primary'>Click here to play Final Round!</button>";
+
     } else {
-    
     gameHtml = "Round 1 Score:<br><br> Correct: " + rightA + "<br><br> Incorrect: " + wrongA + "<br><br> Unanswered: " + unanswered + "<br><br><br><br><br><br><br><br><button type='button' class='btn btn-primary'>Click here to play Round " + btnCounter + "</button>";
     }   
     $("#tvDisplay").removeClass("blankTv").addClass("endTv");
