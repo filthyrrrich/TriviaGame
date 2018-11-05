@@ -141,7 +141,7 @@ h1 {
 }
 
 body {
-     background-image: url("../images/229369947-matrix-code-wallpaper-hd.gif");
+     background-image: url("../images/matrix-wallpaper.jpg");
 }
 
 footer {
@@ -167,6 +167,7 @@ footer {
     margin: 5px;
     text-align: left;
     width: 350px;
+    cursor:pointer;
 }
 
 .btn:hover {
