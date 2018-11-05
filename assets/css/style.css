@@ -168,6 +168,8 @@ footer {
     text-align: left;
     width: 350px;
     cursor:pointer;
+    -webkit-appearance: none;
+
 }
 
 .btn:hover {
