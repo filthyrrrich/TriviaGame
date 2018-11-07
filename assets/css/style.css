@@ -218,12 +218,12 @@ footer {
 
   @media screen and (max-width: 768px) {
     
-    .jumbotron {
-        /* display: none; */
+    /* .jumbotron {
+        display: none;
     }
     footer {
-        /* display: none; */
-    }
+        display: none;
+    } */
     #choicesDisplay {
         width: 600px;
     }
@@ -359,7 +359,7 @@ footer {
     }
     #tvDisplay {
         position: relative;
-        margin: 0 auto;
+        margin-left: 60px;
         margin-bottom: 5px;
     }
     #main {
