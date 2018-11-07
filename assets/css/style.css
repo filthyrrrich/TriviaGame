@@ -45,9 +45,7 @@ h1 {
 .endScore {
     text-align: left;
 }
-#tvDisplay {
-    margin: 0 auto;
-}
+
 .blankTv, .staticTv {
         background-color: black;
         margin-left: auto;
@@ -221,10 +219,10 @@ footer {
   @media screen and (max-width: 768px) {
     
     .jumbotron {
-        display: none;
+        /* display: none; */
     }
     footer {
-        display: none;
+        /* display: none; */
     }
     #choicesDisplay {
         width: 600px;
@@ -258,7 +256,7 @@ footer {
     .staticTv {
         background-image: url("../images/old-TV-image.png"), url("../images/statictv.gif");
     }
-    sT0, .sT1, .sT2, .gB0, .gB1, .gB2, .i0, .i1, .i2, .jP0, .jP1, .jP2, .tD0, .tD1, .tD2, .dP0, .dP1, .dP2, .r0, .r1, .r2, .endTv {
+    .sT0, .sT1, .sT2, .gB0, .gB1, .gB2, .i0, .i1, .i2, .jP0, .jP1, .jP2, .tD0, .tD1, .tD2, .dP0, .dP1, .dP2, .r0, .r1, .r2, .endTv {
         width: 600px;
         height: 400px;
         background-size: cover, 580px 300px;
@@ -360,6 +358,8 @@ footer {
     
     }
     #tvDisplay {
+        position: relative;
+        margin: 0 auto;
         margin-bottom: 5px;
     }
     #main {
