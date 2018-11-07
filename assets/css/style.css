@@ -363,7 +363,7 @@ footer {
         margin-bottom: 5px;
     }
     #main {
-        float: left;
+        /* float: left; */
         margin-left: 0;
         margin-right: auto;
     }
@@ -375,7 +375,7 @@ footer {
   @media screen and (max-width: 640px) {
 
     .container {
-        margin-left: 3%;
+        margin-left: 10%;
     } 
     .btn-Light {
         margin: 5px;
