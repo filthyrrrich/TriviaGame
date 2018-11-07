@@ -117,7 +117,8 @@ function startScreen () {
 }
 
 // generates quote
-function getQuote(){   
+function getQuote(){  
+    $("#choicesDisplay").empty() 
     guessed = false;
     var randChoice = Math.floor(Math.random() * 4);
     var randImg = Math.floor(Math.random() * 3);
