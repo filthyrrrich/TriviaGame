@@ -164,6 +164,7 @@ footer {
 }
 
 .btn-Light {
+    background: white;
     margin: 5px;
     text-align: left;
     width: 350px;
