@@ -343,7 +343,14 @@ footer {
     }
     .btn-primary {
         margin-left: 25%;
-
+    }
+    .btn-Light {
+        margin: 5px;
+        text-align: left;
+        width: 350px;
+        cursor:pointer;
+        -webkit-appearance: none;
+    
     }
     #tvDisplay {
         margin-bottom: 5px;
@@ -363,4 +370,12 @@ footer {
     .container {
         margin-left: 3%;
     } 
+    .btn-Light {
+        margin: 5px;
+        text-align: left;
+        width: 350px;
+        cursor:pointer;
+        -webkit-appearance: none;
+    
+    }
   }
