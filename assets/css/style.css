@@ -45,7 +45,9 @@ h1 {
 .endScore {
     text-align: left;
 }
-
+#tvDisplay {
+    margin: 0 auto;
+}
 .blankTv, .staticTv {
         background-color: black;
         margin-left: auto;
