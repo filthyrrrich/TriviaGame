@@ -169,6 +169,8 @@ footer {
     width: 350px;
     cursor:pointer;
     -webkit-appearance: none;
+    position: relative;
+    z-index: 10;
 
 }
 
@@ -350,6 +352,8 @@ footer {
         width: 350px;
         cursor:pointer;
         -webkit-appearance: none;
+        position: relative;
+        z-index: 10;
     
     }
     #tvDisplay {
@@ -376,6 +380,8 @@ footer {
         width: 350px;
         cursor:pointer;
         -webkit-appearance: none;
+        position: relative;
+        z-index: 10;
     
     }
   }
