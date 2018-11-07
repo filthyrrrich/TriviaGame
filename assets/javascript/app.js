@@ -124,10 +124,10 @@ function getQuote(){
     imgClass = quotes[counter].images[qCount];
     
 // my attempt at somewhat randomizing options with certain specifications
-var choiceOrder1 = "<button type='button' class='btn btn-Light'> A. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
-var choiceOrder2 = "<button type='button' class='btn btn-Light'> A. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
-var choiceOrder3 = "<button type='button' class='btn btn-Light'> A. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
-var choiceOrder4 = "<button type='button' class='btn btn-Light'> A. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
+var choiceOrder1 = "<button type='submit' class='btn btn-Light'> A. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
+var choiceOrder2 = "<button type='submit' class='btn btn-Light'> A. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
+var choiceOrder3 = "<button type='submit' class='btn btn-Light'> A. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
+var choiceOrder4 = "<button type='submit' class='btn btn-Light'> A. " + quotes[counter].optionTwo[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> B. " + quotes[counter].optionOne[randImg] + "</button>" + "<button type='button' class='btn btn-Light'> C. " + quotes[counter].correctAnswer + "</button>" + "<button type='button' class='btn btn-Light'> D. " + quotes[counter].optionThree[randImg] + "</button>";
 var choicesArray = [choiceOrder1, choiceOrder2, choiceOrder3, choiceOrder4];
     clock();
     gameHtml = quotes[counter].q[qCount];
@@ -157,7 +157,7 @@ $("#tvDisplay").on("click", ".btn-primary", function() {
 });
 
 // click event guessing the quote
-$("#choicesDisplay").on("click", ".btn-Light", function() {
+$("#choicesDisplay").on("click touchstart", ".btn-Light", function() {
     selected = $(this).text();
     if(selected.includes(quotes[counter].correctAnswer) && (guessed == false)) {
         guessed = true;
