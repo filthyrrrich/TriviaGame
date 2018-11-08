@@ -274,6 +274,14 @@ footer {
         background-size: cover, 580px 300px;
         background-position: center, 8px 40px;
     }
+    .loading {
+        background-color: black;
+           
+            width: 600px;
+            height: 400px;
+            background-size: cover, 580px 300px;
+            background-position: center, 8px 40px;
+    }
     #tvText {
         padding-top: 65px;
     }
