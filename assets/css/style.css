@@ -45,8 +45,19 @@ h1 {
 .endScore {
     text-align: left;
 }
-
+.loading {
+    background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        width: 720px;
+        height: 500px;
+        background-image: url("../images/old-TV-image.png");
+        background-size: cover, 690px;
+        background-repeat: no-repeat;
+        background-position: center, 8px 50px;
+}
 .blankTv, .staticTv {
+        z-index: 2;
         background-color: black;
         margin-left: auto;
         margin-right: auto;

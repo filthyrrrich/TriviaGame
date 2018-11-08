@@ -136,6 +136,9 @@ var choicesArray = [choiceOrder1, choiceOrder2, choiceOrder3, choiceOrder4];
     $("#tvText").addClass("quote");
     $(".quote").html(gameHtml);
     $("#choicesDisplay").html(choicesArray[randChoice]);
+    $("#tvDisplay").addClass(imgClass).addClass("staticTv")
+    $("#loading").addClass("loading")
+
 }
 
 var selected;
@@ -163,13 +166,16 @@ $("#choicesDisplay").on("click touchstart", ".btn-Light", function() {
     selected = $(this).text();
     if(selected.includes(quotes[counter].correctAnswer) && (guessed == false)) {
         guessed = true;
-        $("#tvDisplay").addClass(imgClass).removeClass("blankTv");
+        $("#loading").removeClass("loading")
+        // $("#tvDisplay").addClass(imgClass).removeClass("blankTv");
         $(this).css('background', '#16d816');
         win();
         clearInterval(timer);
 
     } else if (guessed == false) {
         guessed = true;
+        $("#tvDisplay").removeClass(imgClass)
+        $("#loading").removeClass("loading")
         $(this).css('background', '#d83d16');
         lose();
         clearInterval(timer);
