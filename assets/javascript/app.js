@@ -235,7 +235,7 @@ function endScreen(){
     } else {
     gameHtml = "Round 1 Score:<br><br> Correct: " + rightA + "<br><br> Incorrect: " + wrongA + "<br><br> Unanswered: " + unanswered + "<br><br><br><br><br><br><br><br><button type='button' class='btn btn-primary'>Click here to play Round " + btnCounter + "</button>";
     }   
-    $("#tvDisplay").removeClass("blankTv").addClass("endTv");
+    $("#tvDisplay").addClass("endTv").removeClass("blankTv");
     $("#tvText").addClass("endScore");
     $(".endScore").html(gameHtml);
 }
