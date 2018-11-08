@@ -159,15 +159,18 @@ $("#tvDisplay").on("click", ".btn-primary", function() {
 
 // click event guessing the quote
 $("#choicesDisplay").on("click touchstart", ".btn-Light", function() {
+    console.log(this)
     selected = $(this).text();
     if(selected.includes(quotes[counter].correctAnswer) && (guessed == false)) {
         guessed = true;
         $("#tvDisplay").removeClass("blankTv").addClass(imgClass);
+        $(this).css('background', '#16d816');
         win();
         clearInterval(timer);
 
     } else if (guessed == false) {
         guessed = true;
+        $(this).css('background', '#d83d16');
         lose();
         clearInterval(timer);
     }
