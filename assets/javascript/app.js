@@ -163,7 +163,7 @@ $("#choicesDisplay").on("click touchstart", ".btn-Light", function() {
     selected = $(this).text();
     if(selected.includes(quotes[counter].correctAnswer) && (guessed == false)) {
         guessed = true;
-        $("#tvDisplay").removeClass("blankTv").addClass(imgClass);
+        $("#tvDisplay").addClass(imgClass).removeClass("blankTv");
         $(this).css('background', '#16d816');
         win();
         clearInterval(timer);
