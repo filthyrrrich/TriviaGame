@@ -1,6 +1,6 @@
 # Movie Quotes Trivia
 
-A funny triva game based on some of my favorite movie quotes.
+A funny trivia game based on some of my favorite movie quotes.
 
 ## Built With
 * HTML5
